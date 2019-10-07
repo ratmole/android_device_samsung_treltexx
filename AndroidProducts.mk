@@ -15,4 +15,5 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_treltexx.mk \
-    $(LOCAL_DIR)/rr_treltexx.mk    
+    $(LOCAL_DIR)/rr_treltexx.mk \
+    $(LOCAL_DIR)/aosp_treltexx
