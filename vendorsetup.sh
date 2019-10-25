@@ -1,3 +1,4 @@
 add_lunch_combo lineage_treltexx-userdebug
 add_lunch_combo rr_treltexx-userdebug
 add_lunch_combo aosp_treltexx-userdebug
+add_lunch_combo havoc_treltexx-userdebug
