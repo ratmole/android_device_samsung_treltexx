@@ -21,11 +21,8 @@ $(call inherit-product, device/samsung/trelte-common/device-common.mk)
 # Inherit from those products. Most specific first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
-
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1440
+# Inherit some common Pixel stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier
 PRODUCT_NAME := aosp_treltexx
@@ -36,7 +33,6 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 BUILD_FINGERPRINT := samsung/treltexx/trelte:6.0.1/MMB29K/N910CXXU2DSA2:user/release-keys
 BOARD_VENDOR := samsung
-IS_PHONE := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=treltexx \
